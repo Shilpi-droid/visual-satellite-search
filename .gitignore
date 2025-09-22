@@ -1,0 +1,38 @@
+# Python virtual environment
+venv/
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Gradio temporary files
+.gradio/
+
+# Archive and development sets
+archive/
+development-set/
+
+# Images (if you don't want to track them)
+*.png
+*.jpeg
+*.gif
+
+# IDE specific files (VSCode, PyCharm)
+.vscode/
+.idea/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
