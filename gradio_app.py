@@ -9,6 +9,11 @@ from PIL import Image
 import io
 import requests
 import numpy as np
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 from typing import List, Tuple
 
 # --- CONFIGURATION ---

@@ -1,4 +1,7 @@
 import os
+import os
+from dotenv import load_dotenv
+load_dotenv()  
 import io
 import rasterio
 import numpy as np
