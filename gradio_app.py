@@ -11,6 +11,23 @@ import requests
 import numpy as np
 import os
 from dotenv import load_dotenv
+import os, json, tempfile
+
+import os, tempfile
+
+# Load secret from Hugging Face
+creds_json = os.getenv("GCP_CREDS_JSON")
+if not creds_json:
+    raise RuntimeError("GCP_CREDS_JSON not found. Did you add it in Settings > Variables and Secrets?")
+
+# Write it to a temp file
+creds_path = os.path.join(tempfile.gettempdir(), "gcp-creds.json")
+with open(creds_path, "w") as f:
+    f.write(creds_json)
+
+# Tell GCP libs to use it as ADC
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = creds_path
+
 
 # Load environment variables from .env file
 load_dotenv()

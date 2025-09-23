@@ -1,3 +1,9 @@
+---
+title: visual-search-satellite
+app_file: gradio_app.py
+sdk: gradio
+sdk_version: 5.44.1
+---
 # Satellite Image Similarity Search
 
 **AI-Powered Visual Discovery in Satellite Imagery using BigQuery ML**
